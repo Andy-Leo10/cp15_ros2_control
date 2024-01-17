@@ -13,15 +13,21 @@ Please follow these guidelines to test:
 cd ~/ros2_ws/ ;colcon build;source install/setup.bash
 ros2 launch rb1_ros2_description rb1_ros2_xacro.launch.py
 ```
-![description: robot_rb1](pictures/robot_rb1.png)
+Keep in mind that Gazebo may not always start up properly on the first try. 
+If you encounter an error and Gazebo fails to load, simply kill the process using Ctrl + C and relaunch the file.
+If the simulation launches correctly, you should be able to see the RB-1 robot in an empty world and RVIZ, like in the image below:
+![description: launch](pictures/launch.png)
+
 + Check the controllers
 ```
 ros2 control list_hardware_interfaces
 ros2 control list_controllers
 ```
+
 + MANDATORY: Check the nodes and topics and get these
 ![description: nodes](pictures/nodes.png)
 ![description: topics](pictures/topics.png)
+
 + MANDATORY: Check RVIZ and see the TF's
 ![description: rviz](pictures/rviz.png)
 
