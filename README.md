@@ -25,10 +25,13 @@ ros2 control list_controllers
 ```
 
 + MANDATORY: Check the nodes and topics and get these
+
 ![description: nodes](pictures/nodes.png)
+
 ![description: topics](pictures/topics.png)
 
 + MANDATORY: Check RVIZ and see the TF's
+
 ![description: rviz](pictures/rviz.png)
 
 ## 1. Differential drive
